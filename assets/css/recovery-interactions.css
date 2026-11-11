@@ -1,0 +1,19 @@
+/* Local static-recovery functionality. Avoid external Alpine.js dependency. */
+nav [x-show="open"]{display:none!important}
+nav .recovery-nav-open > [x-show="open"]{display:block!important}
+nav .recovery-nav-open > button [x-show="open"]{display:block!important}
+[x-show="mobile_open"]{display:none!important}
+.recovery-mobile-open > [x-show="mobile_open"]{display:block!important}
+[x-show="active === 0"]{display:block!important}
+[x-show="active === 1"],[x-show="active === 2"]{display:none!important}
+[x-show^="active ==="].recovery-tab-visible{display:block!important}
+[x-show^="active ==="].recovery-tab-hidden{display:none!important}
+nav .recovery-nav-open > button{color:#ed712a!important}
+/* Keep the original SVG speech-bubble pointer above the dropdown border.
+   The reconstructed menu layer had z-index 100 while the arrow remained z-50,
+   causing the panel border to be drawn across its base. */
+nav .recovery-nav-open > [x-show="open"]{z-index:100!important}
+nav .recovery-nav-open > button > .header-arrow{z-index:110!important}
+.recovery-mobile-open > [x-show="mobile_open"]{z-index:101!important}
+.recovery-nav-trigger:focus-visible,.recovery-mobile-trigger:focus-visible{outline:2px solid #ed712a;outline-offset:3px}
+#content .recovery-archive-warning{max-width:1080px;margin:20px auto;padding:10px 16px;border-radius:6px;background:#f6fafb;color:#637e87;font-size:13px}

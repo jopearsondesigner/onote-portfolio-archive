@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+
+<html class="no-js no-svg" lang="en-US" style="scroll-behavior: smooth; overflow-x: hidden;">
+<head>
+<meta charset="utf-8"/>
+<meta content="Archived oNote team page — visual portfolio reproduction of the original WordPress website." name="description"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Team — oNote (design archive)</title>
+<link href="assets/images/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="assets/images/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="assets/images/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="https://use.typekit.net/xxv0hnj.css" rel="stylesheet"/>
+<link href="assets/css/style.css" rel="stylesheet"/>
+
+<script defer="" src="assets/js/preview.js"></script>
+<link href="assets/css/archive.css" rel="stylesheet"/><link href="assets/css/recovery-interactions.css" rel="stylesheet"/><script defer="" src="assets/js/recovery-interactions.js"></script><link rel="stylesheet" href="assets/css/mobile-layout.css"/>
+</head>
+<body class="home page antialiased" data-template="base.twig" x-bind:class="{ 'dark': darkMode }" x-data="{ darkMode: localStorage.getItem('dark') === 'true' }" x-init="$watch('darkMode', val =&gt; localStorage.setItem('dark', val))">
+<a class="sr-only" href="#content">Skip to content</a>
+<div class="min-h-screen flex flex-col bg-white dark:bg-dark-1 text-body-1 dark:text-body-5 opacity-1" id="page">
+<div class="preloader fixed top-0 right-0 bottom-0 left-0 bg-white dark:bg-dark-1 z-50 flex flex-col justify-center transition duration-500 ease-in-out">
+<img alt="preloader" class="lg:h-[28px] h-[25px]" height="32" src="assets/images/nav/onoteLogo.svg"/>
+<p class="mt-4 text-body-1 dark:text-body-5 text-center">Loading ...</p>
+</div>
+<header class="header shadow-md z-30">
+<!-- Container -->
+<div class="relative bg-white dark:bg-dark-2" x-data="{ mobile_open: false }">
+<!-- AppBar -->
+<div class="xl:container mx-auto flex justify-between items-center lg:py-0 lg:justify-start lg:space-x-8">
+<!-- Brand -->
+<div>
+<a class="flex min-w-[103.26px] no-underline" href="index.html">
+<span class="sr-only">oNote</span>
+<img alt="oNote" class="lg:h-[28px] h-[25px] ml-4" height="32" src="assets/images/nav/onoteLogo.svg"/>
+</a>
+</div>
+<!-- OpenMobileMenuButton -->
+<div class="mr-4 lg:hidden">
+<button :aria-expanded="mobile_open" @click="mobile_open = true" class="bg-none rounded-md p-2 inline-flex items-center justify-center text-body-1 dark:text-body-4 no-underline" type="button">
+<span class="sr-only">Open menu</span>
+<svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+<div class="hidden lg:flex-1 lg:flex lg:items-center lg:justify-between">
+<!-- MainNav — recovered from published May 2022 menu -->
+<nav class="flex space-x-8">
+<div @mouseleave="open = false" class="relative" x-data="{ open: false }">
+<button :aria-expanded="open" :class="{'text-body-4': open, 'text-body-1': !open, 'dark:text-body-1': open, 'dark:text-body-4': !open }" @mouseover="open = true" class="group whitespace-nowrap inline-flex justify-center items-center py-4 group text-body-1 text-sm hover:text-body-4 dark:text-body-4 dark:hover:text-body-1 focus:outline-none transition duration-300 ease-in-out" type="button">
+<span>Why oNote?</span>
+<svg :class="{'text-body-4': open, 'text-body-1': !open, 'dark:text-body-1': open, 'dark:text-body-4': !open }" class="h-3 w-3 text-body-1 dark:text-body-4 ml-[2px]" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="header-arrow z-50 w-6 absolute mt-[37px] transform" x-show="open" x-transition:enter="transition ease-out duration-200" x-transition:enter-end="opacity-100 translate-y-0" x-transition:enter-start="opacity-0 translate-y-1" x-transition:leave="transition ease-in duration-150" x-transition:leave-end="opacity-0 translate-y-1" x-transition:leave-start="opacity-100 translate-y-0">
+<img alt="" class="dark:hidden" src="assets/images/nav/navArrow-Light.svg" width="18"/>
+<img alt="" class="hidden dark:block" src="assets/images/nav/navArrow-Dark.svg" width="18"/>
+</span>
+</button>
+<div class="absolute whitespace-nowrap z-40 2xl:left-[24%] xl:left-[14%] lg:left-[18%] -ml-4 -mt-1 transform w-auto" x-show="open" x-transition:enter="transition ease-out duration-200" x-transition:enter-end="opacity-100 translate-y-0" x-transition:enter-start="opacity-0 translate-y-1" x-transition:leave="transition ease-in duration-150" x-transition:leave-end="opacity-0 translate-y-1" x-transition:leave-start="opacity-100 translate-y-0">
+<div class="rounded-lg shadow-xl border border-body-5 dark:border-border-dark overflow-hidden">
+<div class="bg-white dark:bg-dark-2 px-4 py-4 sm:gap-8 sm:p-8">
+<div class="inline-flex">
+<div class="px-4">
+<a class="-m-3 p-3 inline-flex justify-center w-auto no-underline" href="features.html">
+<div>
+<p class="text-sm text-body-1 hover:text-body-4 dark:text-body-4 dark:hover:text-body-1 pb-0 transition duration-300 ease-in-out">Features</p>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a class="py-4 text-sm text-body-1 hover:text-body-4 dark:text-body-4 dark:hover:text-body-1 no-underline" href="archive-note.html#docs" rel="noopener">Docs</a>
+<div @mouseleave="open = false" class="relative" x-data="{ open: false }">
+<button :aria-expanded="open" :class="{'text-body-4': open, 'text-body-1': !open, 'dark:text-body-1': open, 'dark:text-body-4': !open }" @mouseover="open = true" class="group whitespace-nowrap inline-flex justify-center items-center py-4 group text-body-1 text-sm hover:text-body-4 dark:text-body-4 dark:hover:text-body-1 focus:outline-none transition duration-300 ease-in-out" type="button">
+<span>Learn</span>
+<svg :class="{'text-body-4': open, 'text-body-1': !open, 'dark:text-body-1': open, 'dark:text-body-4': !open }" class="h-3 w-3 text-body-1 dark:text-body-4 ml-[2px]" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="header-arrow z-50 w-6 absolute mt-[37px] transform" x-show="open" x-transition:enter="transition ease-out duration-200" x-transition:enter-end="opacity-100 translate-y-0" x-transition:enter-start="opacity-0 translate-y-1" x-transition:leave="transition ease-in duration-150" x-transition:leave-end="opacity-0 translate-y-1" x-transition:leave-start="opacity-100 translate-y-0">
+<img alt="" class="dark:hidden" src="assets/images/nav/navArrow-Light.svg" width="18"/>
+<img alt="" class="hidden dark:block" src="assets/images/nav/navArrow-Dark.svg" width="18"/>
+</span>
+</button>
+<div class="absolute whitespace-nowrap z-40 2xl:left-[24%] xl:left-[14%] lg:left-[18%] -ml-4 -mt-1 transform w-auto" x-show="open" x-transition:enter="transition ease-out duration-200" x-transition:enter-end="opacity-100 translate-y-0" x-transition:enter-start="opacity-0 translate-y-1" x-transition:leave="transition ease-in duration-150" x-transition:leave-end="opacity-0 translate-y-1" x-transition:leave-start="opacity-100 translate-y-0">
+<div class="rounded-lg shadow-xl border border-body-5 dark:border-border-dark overflow-hidden">
+<div class="bg-white dark:bg-dark-2 px-4 py-4 sm:gap-8 sm:p-8">
+<div class="inline-flex">
+<div class="px-4">
+<a class="-m-3 p-3 inline-flex justify-center w-auto no-underline" href="blog.html">
+<div>
+<p class="text-sm text-body-1 hover:text-body-4 dark:text-body-4 dark:hover:text-body-1 pb-0 transition duration-300 ease-in-out">Blog</p>
+</div>
+</a>
+</div>
+<div class="px-4">
+<a class="-m-3 p-3 inline-flex justify-center w-auto no-underline" href="webinars.html">
+<div>
+<p class="text-sm text-body-1 hover:text-body-4 dark:text-body-4 dark:hover:text-body-1 pb-0 transition duration-300 ease-in-out">Webinars</p>
+</div>
+</a>
+</div>
+<div class="px-4">
+<a class="-m-3 p-3 inline-flex justify-center w-auto no-underline" href="conferences.html">
+<div>
+<p class="text-sm text-body-1 hover:text-body-4 dark:text-body-4 dark:hover:text-body-1 pb-0 transition duration-300 ease-in-out">Conferences</p>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div @mouseleave="open = false" class="relative" x-data="{ open: false }">
+<button :aria-expanded="open" :class="{'text-body-4': open, 'text-body-1': !open, 'dark:text-body-1': open, 'dark:text-body-4': !open }" @mouseover="open = true" class="group whitespace-nowrap inline-flex justify-center items-center py-4 group text-body-1 text-sm hover:text-body-4 dark:text-body-4 dark:hover:text-body-1 focus:outline-none transition duration-300 ease-in-out" type="button">
+<span>Service &amp; Support</span>
+<svg :class="{'text-body-4': open, 'text-body-1': !open, 'dark:text-body-1': open, 'dark:text-body-4': !open }" class="h-3 w-3 text-body-1 dark:text-body-4 ml-[2px]" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="header-arrow z-50 w-6 absolute mt-[37px] transform" x-show="open" x-transition:enter="transition ease-out duration-200" x-transition:enter-end="opacity-100 translate-y-0" x-transition:enter-start="opacity-0 translate-y-1" x-transition:leave="transition ease-in duration-150" x-transition:leave-end="opacity-0 translate-y-1" x-transition:leave-start="opacity-100 translate-y-0">
+<img alt="" class="dark:hidden" src="assets/images/nav/navArrow-Light.svg" width="18"/>
+<img alt="" class="hidden dark:block" src="assets/images/nav/navArrow-Dark.svg" width="18"/>
+</span>
+</button>
+<div class="absolute whitespace-nowrap z-40 2xl:left-[24%] xl:left-[14%] lg:left-[18%] -ml-4 -mt-1 transform w-auto" x-show="open" x-transition:enter="transition ease-out duration-200" x-transition:enter-end="opacity-100 translate-y-0" x-transition:enter-start="opacity-0 translate-y-1" x-transition:leave="transition ease-in duration-150" x-transition:leave-end="opacity-0 translate-y-1" x-transition:leave-start="opacity-100 translate-y-0">
+<div class="rounded-lg shadow-xl border border-body-5 dark:border-border-dark overflow-hidden">
+<div class="bg-white dark:bg-dark-2 px-4 py-4 sm:gap-8 sm:p-8">
+<div class="inline-flex">
+<div class="px-4">
+<a class="-m-3 p-3 inline-flex justify-center w-auto no-underline" href="archive-note.html#support" rel="noopener">
+<div>
+<p class="text-sm text-body-1 hover:text-body-4 dark:text-body-4 dark:hover:text-body-1 pb-0 transition duration-300 ease-in-out">Support</p>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div @mouseleave="open = false" class="relative" x-data="{ open: false }">
+<button :aria-expanded="open" :class="{'text-body-4': open, 'text-body-1': !open, 'dark:text-body-1': open, 'dark:text-body-4': !open }" @mouseover="open = true" class="group whitespace-nowrap inline-flex justify-center items-center py-4 group text-body-1 text-sm hover:text-body-4 dark:text-body-4 dark:hover:text-body-1 focus:outline-none transition duration-300 ease-in-out" type="button">
+<span>Company</span>
+<svg :class="{'text-body-4': open, 'text-body-1': !open, 'dark:text-body-1': open, 'dark:text-body-4': !open }" class="h-3 w-3 text-body-1 dark:text-body-4 ml-[2px]" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="header-arrow z-50 w-6 absolute mt-[37px] transform" x-show="open" x-transition:enter="transition ease-out duration-200" x-transition:enter-end="opacity-100 translate-y-0" x-transition:enter-start="opacity-0 translate-y-1" x-transition:leave="transition ease-in duration-150" x-transition:leave-end="opacity-0 translate-y-1" x-transition:leave-start="opacity-100 translate-y-0">
+<img alt="" class="dark:hidden" src="assets/images/nav/navArrow-Light.svg" width="18"/>
+<img alt="" class="hidden dark:block" src="assets/images/nav/navArrow-Dark.svg" width="18"/>
+</span>
+</button>
+<div class="absolute whitespace-nowrap z-40 2xl:left-[24%] xl:left-[14%] lg:left-[18%] -ml-4 -mt-1 transform w-auto" x-show="open" x-transition:enter="transition ease-out duration-200" x-transition:enter-end="opacity-100 translate-y-0" x-transition:enter-start="opacity-0 translate-y-1" x-transition:leave="transition ease-in duration-150" x-transition:leave-end="opacity-0 translate-y-1" x-transition:leave-start="opacity-100 translate-y-0">
+<div class="rounded-lg shadow-xl border border-body-5 dark:border-border-dark overflow-hidden">
+<div class="bg-white dark:bg-dark-2 px-4 py-4 sm:gap-8 sm:p-8">
+<div class="inline-flex">
+<div class="px-4">
+<a class="-m-3 p-3 inline-flex justify-center w-auto no-underline" href="team.html">
+<div>
+<p class="text-sm text-body-1 hover:text-body-4 dark:text-body-4 dark:hover:text-body-1 pb-0 transition duration-300 ease-in-out">Team</p>
+</div>
+</a>
+</div>
+<div class="px-4">
+<a class="-m-3 p-3 inline-flex justify-center w-auto no-underline" href="contact.html">
+<div>
+<p class="text-sm text-body-1 hover:text-body-4 dark:text-body-4 dark:hover:text-body-1 pb-0 transition duration-300 ease-in-out">Contact</p>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<!-- AccountNav -->
+<div class="hidden lg:flex items-center lg:ml-12">
+<a class="text-sm whitespace-nowrap text-body-1 mr-8 hover:text-body-4 dark:text-body-4 dark:hover:text-body-1 transition duration-300 ease-in-out inline-flex no-underline" href="archive-note.html#application" rel="noopener">Log In</a>
+<a class="text-sm whitespace-nowrap text-sm rounded-md inline-flex items-center px-4 py-1 text-white hover:text-white transition duration-300 ease-in-out bg-gradient-to-b from-primary to-secondary-red hover:bg-gradient-to-b hover:from-secondary-red hover:to-secondary-red uppercase mr-4 no-underline" href="archive-note.html#application" rel="noopener">
+							Sign Up
+							<span class="ml-1">
+<svg height="8.083" viewbox="0 0 4.975 8.083" width="4.975" xmlns="http://www.w3.org/2000/svg"><path d="m1500 413.262-4-4 .836-.836 3.164 3.164 3.164-3.164.836.836z" fill="#FFFFFF" transform="matrix(-.017 -1 1 -.017 -382.116 1510.983)"></path></svg>
+</span>
+</a>
+</div>
+</div>
+</div>
+<!-- MobileMenu -->
+<div @click.away="mobile_open = false" class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right lg:hidden" x-show="mobile_open" x-transition:enter="duration-200 ease-out" x-transition:enter-end="opacity-100 scale-100" x-transition:enter-start="opacity-0 scale-95" x-transition:leave="duration-100 ease-in" x-transition:leave-end="opacity-0 scale-95" x-transition:leave-start="opacity-100 scale-100">
+<nav class="rounded-lg shadow-lg bg-white dark:bg-dark-2 border border-body-5 dark:border-border-dark">
+<div class="flex justify-between items-center py-2 border-b border-border-light dark:border-border-dark">
+<button @click="darkMode = !darkMode" class="w-[39px] ml-4" type="button">
+<img alt="light/dark theme button" class="dark:hidden" src="assets/images/global/toggleDark.svg" width="auto"/>
+<img alt="light/dark theme button" class="hidden dark:block" src="assets/images/global/toggleLight.svg" width="auto"/>
+</button>
+<div class="mr-4 flex">
+<button @click="mobile_open = false" type="button">
+<span class="sr-only">Close menu</span>
+<svg aria-hidden="true" class="h-5 w-5 text-body-1 dark:text-body-4" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+</div>
+<div>
+<div @click.away="open = false" class="relative" x-data="{ open: false }">
+<button @click="open = ! open" class="flex items-center justify-between p-4 border-b border-border-light dark:border-border-dark w-full focus:bg-secondary focus:bg-opacity-[8%]" type="button">
+<div class="text-sm text-body-1 dark:text-body-4">Why oNote?</div>
+<div :class="{'-rotate-180': open}" class="transform ease-in duration-300">
+<img alt="" src="assets/images/global/chevronDown.svg" width="12"/>
+</div>
+</button>
+<div class="relative overflow-hidden transition-max-height max-h-0 duration-500" x-bind:style="open == 1 ? 'max-height: ' + $refs.containerWhy.scrollHeight + 'px' : ''" x-ref="containerWhy">
+<div class="px-4">
+<div class="p-4 border-b border-body-5 dark:border-border-dark w-full">
+<a class="-m-3 p-3 inline-flex w-[208px] no-underline" href="features.html">
+<div>
+<p class="text-sm text-body-1 dark:text-body-4 pb-0">Features</p>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="p-4 border-b border-body-5 dark:border-border-dark w-full">
+<a class="text-sm text-body-1 dark:text-body-4 no-underline" href="archive-note.html#docs" rel="noopener">Docs</a>
+</div>
+<div @click.away="open = false" class="relative" x-data="{ open: false }">
+<button @click="open = ! open" class="flex items-center justify-between p-4 border-b border-border-light dark:border-border-dark w-full focus:bg-secondary focus:bg-opacity-[8%]" type="button">
+<div class="text-sm text-body-1 dark:text-body-4">Learn</div>
+<div :class="{'-rotate-180': open}" class="transform ease-in duration-300">
+<img alt="" src="assets/images/global/chevronDown.svg" width="12"/>
+</div>
+</button>
+<div class="relative overflow-hidden transition-max-height max-h-0 duration-500" x-bind:style="open == 1 ? 'max-height: ' + $refs.containerLearn.scrollHeight + 'px' : ''" x-ref="containerLearn">
+<div class="px-4"><div class="p-4 border-b border-body-5 dark:border-border-dark w-full"><a class="-m-3 p-3 inline-flex w-[208px] no-underline" href="blog.html"><div><p class="text-sm text-body-1 dark:text-body-4 pb-0">Blog</p></div></a></div></div>
+<div class="px-4"><div class="p-4 border-b border-body-5 dark:border-border-dark w-full"><a class="-m-3 p-3 inline-flex w-[208px] no-underline" href="webinars.html"><div><p class="text-sm text-body-1 dark:text-body-4 pb-0">Webinars</p></div></a></div></div>
+<div class="px-4"><div class="p-4 border-b border-body-5 dark:border-border-dark w-full"><a class="-m-3 p-3 inline-flex w-[208px] no-underline" href="conferences.html"><div><p class="text-sm text-body-1 dark:text-body-4 pb-0">Conferences</p></div></a></div></div>
+</div>
+</div>
+<div @click.away="open = false" class="relative" x-data="{ open: false }">
+<button @click="open = ! open" class="flex items-center justify-between p-4 border-b border-border-light dark:border-border-dark w-full focus:bg-secondary focus:bg-opacity-[8%]" type="button">
+<div class="text-sm text-body-1 dark:text-body-4">Service &amp; Support</div>
+<div :class="{'-rotate-180': open}" class="transform ease-in duration-300">
+<img alt="" src="assets/images/global/chevronDown.svg" width="12"/>
+</div>
+</button>
+<div class="relative overflow-hidden transition-max-height max-h-0 duration-500" x-bind:style="open == 1 ? 'max-height: ' + $refs.containerSupport.scrollHeight + 'px' : ''" x-ref="containerSupport">
+<div class="px-4"><div class="p-4 border-b border-body-5 dark:border-border-dark w-full"><a class="-m-3 p-3 inline-flex w-[208px] no-underline" href="archive-note.html#support" rel="noopener"><div><p class="text-sm text-body-1 dark:text-body-4 pb-0">Support</p></div></a></div></div>
+</div>
+</div>
+<div @click.away="open = false" class="relative" x-data="{ open: false }">
+<button @click="open = ! open" class="flex items-center justify-between p-4 border-b border-border-light dark:border-border-dark w-full focus:bg-secondary focus:bg-opacity-[8%]" type="button">
+<div class="text-sm text-body-1 dark:text-body-4">Company</div>
+<div :class="{'-rotate-180': open}" class="transform ease-in duration-300">
+<img alt="" src="assets/images/global/chevronDown.svg" width="12"/>
+</div>
+</button>
+<div class="relative overflow-hidden transition-max-height max-h-0 duration-500" x-bind:style="open == 1 ? 'max-height: ' + $refs.containerCompany.scrollHeight + 'px' : ''" x-ref="containerCompany">
+<div class="px-4"><div class="p-4 border-b border-body-5 dark:border-border-dark w-full"><a class="-m-3 p-3 inline-flex w-[208px] no-underline" href="team.html"><div><p class="text-sm text-body-1 dark:text-body-4 pb-0">Team</p></div></a></div></div>
+<div class="px-4"><div class="p-4 border-b border-body-5 dark:border-border-dark w-full"><a class="-m-3 p-3 inline-flex w-[208px] no-underline" href="contact.html"><div><p class="text-sm text-body-1 dark:text-body-4 pb-0">Contact</p></div></a></div></div>
+</div>
+</div>
+</div>
+<div class="py-8 px-8">
+<div class="flex justify-center">
+<a class="whitespace-nowrap text-body-1 dark:text-body-4 text-center mb-4 no-underline" href="archive-note.html#application">Log In</a>
+</div>
+<div class="flex justify-center">
+<a class="whitespace-nowrap text-sm rounded-md inline-flex items-center px-4 py-1 text-white hover:text-white transition-colors duration-300 ease-in-out bg-gradient-to-b from-primary to-secondary-red hover:bg-gradient-to-b hover:from-secondary-red hover:to-secondary-red uppercase no-underline" href="archive-note.html#application" rel="noopener">
+								Sign Up
+								<span class="ml-1">
+<svg height="8.083" viewbox="0 0 4.975 8.083" width="4.975" xmlns="http://www.w3.org/2000/svg"><path d="m1500 413.262-4-4 .836-.836 3.164 3.164 3.164-3.164.836.836z" fill="#FFFFFF" transform="matrix(-.017 -1 1 -.017 -382.116 1510.983)"></path></svg>
+</span>
+</a>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</header>
+<section class="site-content flex-grow" id="content" role="main">
+<div class="lg:block hidden right-0 z-20 absolute w-auto pt-[5px] pl-2 rounded-tl-sm rounded-bl-sm" id="themeButton">
+<button @click="darkMode = !darkMode" class="w-[44px] xl:mr-8 mr-4" type="button">
+<img alt="light/dark theme button" class="dark:hidden" id="themeButtonLight" src="assets/images/global/toggleDark.svg" width="auto"/>
+<p class="text-xs dark:hidden text-body-1 uppercase mt-1 text-center pb-0">Light</p>
+<img alt="light/dark theme button" class="hidden dark:block" id="themeButtonDark" src="assets/images/global/toggleLight.svg" width="auto"/>
+<p class="text-xs hidden dark:block text-body-1 uppercase mt-1 text-center pb-0">Dark</p>
+</button>
+</div>
+<div class="sm:container mx-auto py-4"><p class="text-body-5 dark:text-body-2 opacity-100 dark:opacity-60 font-bold ml-4 text-left">oNote team</p></div>
+<main class="w-full h-auto z-10 relative">
+<div class="grid lg:grid-cols-6 px-4">
+<div class="lg:col-start-2 col-span-4">
+<section class="lg:mt-0 mt-0">
+<div>
+<h2 class="text-body-2 dark:text-body-4 lg:text-[30px] text-[24px] leading-[1.27] font-bold mb-4 text-center">
+            Meet the oNote team!
+        </h2>
+<div class="text-medium leading-6 text-center">
+</div>
+</div>
+</section> </div>
+</div>
+<div class="container mx-auto lg:my-24 my-0">
+<div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
+<div class="lg:grid-cols-1">
+<section class="lg:mt-0 px-4">
+<div class="group border border-border-light dark:border-border-dark p-4 rounded-md">
+<img class="mb-8 mt-4 mx-auto" src="assets/images/uploads/2021/07/bobby.png" width="255"/>
+<h4 class="transition duration-300 ease-in-out text-body-2 dark:text-body-4 lg:text-[24px] text-[24px] group-hover:text-primary leading-[1.27] font-bold mb-4 text-center">
+            Bobby Calderwood
+        </h4>
+<div class="uppercase text-body-5 dark:text-body-4 text-xs leading-[1.27] font-bold mb-2 text-center">
+            Founder and Software Engineer
+        </div>
+<div class="text-medium leading-normal text-center px-4 mb-4">
+<p>Bobby drives a truck and develops software. A true renaissance man, no?</p>
+</div>
+</div>
+</section> </div>
+<div class="lg:grid-cols-2">
+<section class="lg:mt-0 px-4">
+<div class="group border border-border-light dark:border-border-dark p-4 rounded-md">
+<img class="mb-8 mt-4 mx-auto" src="assets/images/uploads/2021/07/cash.png" width="255"/>
+<h4 class="transition duration-300 ease-in-out text-body-2 dark:text-body-4 lg:text-[24px] text-[24px] group-hover:text-primary leading-[1.27] font-bold mb-4 text-center">
+            Cash Monestine
+        </h4>
+<div class="uppercase text-body-5 dark:text-body-4 text-xs leading-[1.27] font-bold mb-2 text-center">
+            Sales
+        </div>
+<div class="text-medium leading-normal text-center px-4 mb-4">
+<p>Cash loves long walks on the beach, delicious steak dinners and Event Modeling.</p>
+</div>
+</div>
+</section> </div>
+<div class="lg:grid-cols-3">
+<section class="lg:mt-0 px-4">
+<div class="group border border-border-light dark:border-border-dark p-4 rounded-md">
+<img class="mb-8 mt-4 mx-auto" src="assets/images/uploads/2022/03/mike.png" width="255"/>
+<h4 class="transition duration-300 ease-in-out text-body-2 dark:text-body-4 lg:text-[24px] text-[24px] group-hover:text-primary leading-[1.27] font-bold mb-4 text-center">
+            Mike Shearer
+        </h4>
+<div class="uppercase text-body-5 dark:text-body-4 text-xs leading-[1.27] font-bold mb-2 text-center">
+            Lead Software Engineer
+        </div>
+<div class="text-medium leading-normal text-center px-4 mb-4">
+</div>
+</div>
+</section> </div>
+<div class="lg:grid-cols-1">
+<section class="lg:mt-0 px-4">
+<div class="group border border-border-light dark:border-border-dark p-4 rounded-md">
+<img class="mb-8 mt-4 mx-auto" src="assets/images/uploads/2022/03/jo.png" width="255"/>
+<h4 class="transition duration-300 ease-in-out text-body-2 dark:text-body-4 lg:text-[24px] text-[24px] group-hover:text-primary leading-[1.27] font-bold mb-4 text-center">
+            Jo Pearson
+        </h4>
+<div class="uppercase text-body-5 dark:text-body-4 text-xs leading-[1.27] font-bold mb-2 text-center">
+            Lead Designer
+        </div>
+<div class="text-medium leading-normal text-center px-4 mb-4">
+<p>Jo’s Love Languages include Words of Affirmation, State-of-the-art Apps, and Sweet Design.</p>
+</div>
+</div>
+</section> </div>
+<div class="lg:grid-cols-1">
+<section class="lg:mt-0 px-4">
+<div class="group border border-border-light dark:border-border-dark p-4 rounded-md">
+<img class="mb-8 mt-4 mx-auto" src="assets/images/uploads/2022/03/terry.png" width="255"/>
+<h4 class="transition duration-300 ease-in-out text-body-2 dark:text-body-4 lg:text-[24px] text-[24px] group-hover:text-primary leading-[1.27] font-bold mb-4 text-center">
+            Terry Blessing
+        </h4>
+<div class="uppercase text-body-5 dark:text-body-4 text-xs leading-[1.27] font-bold mb-2 text-center">
+            Technical Writer
+        </div>
+<div class="text-medium leading-normal text-center px-4 mb-4">
+<p>We suspect—strongly—that Terry’s last name actually refers to her many gifts, including writing.</p>
+</div>
+</div>
+</section> </div>
+<div class="lg:grid-cols-1">
+<section class="lg:mt-0 px-4">
+<div class="group border border-border-light dark:border-border-dark p-4 rounded-md">
+<img class="mb-8 mt-4 mx-auto" src="assets/images/uploads/2021/07/kevin.png" width="255"/>
+<h4 class="transition duration-300 ease-in-out text-body-2 dark:text-body-4 lg:text-[24px] text-[24px] group-hover:text-primary leading-[1.27] font-bold mb-4 text-center">
+            Kevin Calderwood
+        </h4>
+<div class="uppercase text-body-5 dark:text-body-4 text-xs leading-[1.27] font-bold mb-2 text-center">
+            Advisor
+        </div>
+<div class="text-medium leading-normal text-center px-4 mb-4">
+<p>Kevin combined his two passions for this oNote project: family and investing.</p>
+</div>
+</div>
+</section> </div>
+<div class="lg:grid-cols-1">
+<section class="lg:mt-0 px-4">
+<div class="group border border-border-light dark:border-border-dark p-4 rounded-md">
+<img class="mb-8 mt-4 mx-auto" src="assets/images/uploads/2021/07/tracey.png" width="255"/>
+<h4 class="transition duration-300 ease-in-out text-body-2 dark:text-body-4 lg:text-[24px] text-[24px] group-hover:text-primary leading-[1.27] font-bold mb-4 text-center">
+            Tracey Mustacchio
+        </h4>
+<div class="uppercase text-body-5 dark:text-body-4 text-xs leading-[1.27] font-bold mb-2 text-center">
+            Advisor
+        </div>
+<div class="text-medium leading-normal text-center px-4 mb-4">
+<p>Technology lover and marketer by day, dessert connoisseur and book critic by night.</p>
+</div>
+</div>
+</section> </div>
+<div class="lg:grid-cols-1">
+<section class="lg:mt-0 px-4">
+<div class="group border border-border-light dark:border-border-dark p-4 rounded-md">
+<img class="mb-8 mt-4 mx-auto" src="assets/images/uploads/2021/07/john.png" width="255"/>
+<h4 class="transition duration-300 ease-in-out text-body-2 dark:text-body-4 lg:text-[24px] text-[24px] group-hover:text-primary leading-[1.27] font-bold mb-4 text-center">
+            John Kealey
+        </h4>
+<div class="uppercase text-body-5 dark:text-body-4 text-xs leading-[1.27] font-bold mb-2 text-center">
+            Advisor
+        </div>
+<div class="text-medium leading-normal text-center px-4 mb-4">
+<p>When John isn’t advising, he’s out boating around on the lake with his wife.</p>
+</div>
+</div>
+</section> </div>
+<div class="lg:grid-cols-1">
+<section class="lg:mt-0 px-4">
+<div class="group border border-border-light dark:border-border-dark p-4 rounded-md">
+<img class="mb-8 mt-4 mx-auto" src="assets/images/uploads/2021/07/anthony.png" width="255"/>
+<h4 class="transition duration-300 ease-in-out text-body-2 dark:text-body-4 lg:text-[24px] text-[24px] group-hover:text-primary leading-[1.27] font-bold mb-4 text-center">
+            Anthony Archibald
+        </h4>
+<div class="uppercase text-body-5 dark:text-body-4 text-xs leading-[1.27] font-bold mb-2 text-center">
+            Advisor
+        </div>
+<div class="text-medium leading-normal text-center px-4 mb-4">
+<p>Anthony loves mountain biking and skiing with his 4 daughters.</p>
+</div>
+</div>
+</section> </div>
+<div class="lg:grid-cols-1">
+<section class="lg:mt-0 px-4">
+<div class="group border border-border-light dark:border-border-dark p-4 rounded-md">
+<img class="mb-8 mt-4 mx-auto" src="assets/images/uploads/2021/07/adam.png" width="255"/>
+<h4 class="transition duration-300 ease-in-out text-body-2 dark:text-body-4 lg:text-[24px] text-[24px] group-hover:text-primary leading-[1.27] font-bold mb-4 text-center">
+            Adam Dymitruk
+        </h4>
+<div class="uppercase text-body-5 dark:text-body-4 text-xs leading-[1.27] font-bold mb-2 text-center">
+            Distinguished Technical Advisor
+        </div>
+<div class="text-medium leading-normal text-center px-4 mb-4">
+<p>Developed Event Modeling as a way to build information systems predictably.</p>
+</div>
+</div>
+</section> </div>
+</div>
+<div class="grid lg:grid-cols-6 my-16 px-4">
+<div class="lg:col-start-2 col-span-4 mt-8">
+<section class="lg:mt-0 mt-0">
+<div>
+<h2 class="text-body-2 dark:text-body-4 lg:text-[30px] text-[24px] leading-[1.27] font-bold mb-4 text-center">
+            oNote is a product of Evident Systems LLC.
+        </h2>
+<div class="text-medium leading-6 text-center">
+<p><a href="https://www.linkedin.com/in/bobbycalderwood/" rel="noreferrer noopener" target="_blank">Bobby Calderwood</a> founded Evident Systems LLC in 2018 to help companies build event-based information systems. He has <a href="https://www.youtube.com/watch?v=B1-gS0oEtYc" rel="noreferrer noopener" target="_blank">spoken at conferences</a> and <a href="https://www.confluent.io/blog/toward-functional-programming-analogy-microservices/" rel="noreferrer noopener" target="_blank">written about</a> achieving better software architecture by focusing on business events.</p>
+</div>
+</div>
+</section> </div>
+</div>
+</div>
+</main>
+</section>
+<footer id="footer">
+<section class="bg-black dark:bg-white bg-opacity-[4%] dark:bg-opacity-[4%] py-[60px]">
+<div class="container mx-auto py-[60px]">
+<div class="flex md:flex-row">
+<div class="hidden md:block md:w-1/4 w-auto">
+<a class="flex min-w-[103.26px]" href="index.html">
+<span class="sr-only">oNote</span>
+<img alt="oNote" class="h-[25px] ml-4" height="32" src="assets/images/nav/onoteLogo.svg"/>
+</a>
+</div>
+<div class="md:w-3/4 w-auto px-4">
+<div class="grid sm:grid-cols-3 grid-cols-2 gap-4">
+<div class="px-4">
+<div class="pb-2 w-full border-b border-body-light dark:border-border-dark text-sm font-bold text-body-1 dark:text-body-4">Why oNote?</div>
+<div class="w-full py-2"><a class="text-sm text-body-1 hover:text-body-4 dark:text-body-4 dark:hover:text-body-1 transition duration-300 ease-in-out" href="features.html">Features</a></div>
+</div>
+<div class="px-4">
+<div class="pb-2 w-full border-b border-body-light dark:border-border-dark text-sm font-bold text-body-1 dark:text-body-4">Learn</div>
+<div class="w-full py-2"><a class="text-sm text-body-1 hover:text-body-4 dark:text-body-4 dark:hover:text-body-1 transition duration-300 ease-in-out" href="blog.html">Blog</a></div>
+<div class="w-full py-2"><a class="text-sm text-body-1 hover:text-body-4 dark:text-body-4 dark:hover:text-body-1 transition duration-300 ease-in-out" href="webinars.html">Webinars</a></div>
+<div class="w-full py-2"><a class="text-sm text-body-1 hover:text-body-4 dark:text-body-4 dark:hover:text-body-1 transition duration-300 ease-in-out" href="conferences.html">Conferences</a></div>
+</div>
+<div class="px-4">
+<div class="pb-2 w-full border-b border-body-light dark:border-border-dark text-sm font-bold text-body-1 dark:text-body-4">Service &amp; Support</div>
+<div class="w-full py-2"><a class="text-sm text-body-1 hover:text-body-4 dark:text-body-4 dark:hover:text-body-1 transition duration-300 ease-in-out" href="archive-note.html#support" rel="noopener">Support</a></div>
+</div>
+<div class="px-4">
+<div class="pb-2 w-full border-b border-body-light dark:border-border-dark text-sm font-bold text-body-1 dark:text-body-4">Company</div>
+<div class="w-full py-2"><a class="text-sm text-body-1 hover:text-body-4 dark:text-body-4 dark:hover:text-body-1 transition duration-300 ease-in-out" href="team.html">Team</a></div>
+<div class="w-full py-2"><a class="text-sm text-body-1 hover:text-body-4 dark:text-body-4 dark:hover:text-body-1 transition duration-300 ease-in-out" href="contact.html">Contact</a></div>
+</div>
+</div>
+</div>
+</div>
+<section class="mt-16">
+<div class="text-center">
+<a class="py-4 px-1 text-sm text-body-1 hover:text-body-4 dark:text-body-4 dark:hover:text-body-1 transition duration-300 ease-in-out" href="privacy-policy.html">Privacy</a>
+<span class="py-4 text-sm text-body-1 dark:text-body-4">|</span>
+<a class="py-4 px-1 text-sm text-body-1 hover:text-body-4 dark:text-body-4 dark:hover:text-body-1 transition duration-300 ease-in-out" href="terms-and-conditions.html">Terms of Service</a>
+</div>
+<div>
+<p class="text-center text-[12px] text-body-1 dark:text-body-4 mt-4">Original oNote design circa 2021–2022 · Static archival demonstration · Not an active product website</p>
+</div>
+</section>
+</div>
+</section>
+</footer>
+</div>
+</body>
+</html>

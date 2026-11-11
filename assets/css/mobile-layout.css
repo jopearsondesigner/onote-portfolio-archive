@@ -1,0 +1,38 @@
+/*
+ * oNote historical preview — responsive recovery.
+ * Original theme CSS stays untouched. Mobile-only adjustments to the static
+ * archive preserve the original desktop composition.
+ */
+#hero { overflow-x: clip; }
+/* Prevent min-content width of auto-sized grid tracks from expanding the
+   homepage beyond the viewport in browsers using the original typeface. */
+@media (max-width: 1023px) {
+  #hero > .container > .grid { grid-template-columns: minmax(0, 1fr); }
+  #hero > .container > .grid > * { min-width: 0; max-width: 100%; }
+  #hero > .container > .grid > div:last-child,
+  #hero > .container > .grid > div:last-child > div { width: 100%; max-width: 100%; min-width: 0; }
+  #hero > .container > .grid > div:last-child img { max-width: 100%; height: auto; }
+  #hero #heroHeader { max-width: 100%; overflow-wrap: break-word; }
+  #content .grid > * { min-width: 0; }
+  #content img { max-width: 100%; height: auto; }
+}
+@media (max-width: 639px) {
+  /* Hero artwork first, text underneath; avoid the theme's intentional
+     negative-margin overlap at desktop/tablet sizes. */
+  #hero > .container > .grid > div:first-child { padding-inline: 18px; }
+  #hero > .container > .grid > div:first-child > div { width: 100%; margin: 0 0 36px !important; }
+  #hero #heroHeader { font-size: clamp(27px, 7.6vw, 32px); line-height: 1.17; }
+  #hero #heroHeader + div { font-size: 16px; line-height: 1.55; }
+  #hero > .container > .grid > div:last-child > div { overflow: hidden; }
+  /* The original desktop navigation is hidden below 1024px. Keep the
+     brand and hamburger inside the viewport even with longer web fonts. */
+  .header > div, .header > div > div:first-child { max-width: 100%; }
+  .header > div > div:first-child { min-width: 0; }
+  /* Keep the three feature selectors usable on narrow phones. */
+  .featureTabs { min-width: 0; max-width: 100%; justify-content: space-between; }
+  .featureTabs > li { min-width: 0; }
+  .featureTabs button { white-space: nowrap; font-size: clamp(12px, 3.5vw, 15px); padding-inline: 8px; }
+  .featureTabs span { white-space: nowrap; }
+  #content .archive-page { padding-inline: 18px; }
+  #content .archive-text-card { padding: 20px; }
+}

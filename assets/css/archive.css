@@ -1,0 +1,12 @@
+
+/* Archive-only supplementary page styles; original homepage styles unchanged */
+.archive-page{background:linear-gradient(145deg,#fff 0%,#f8fcfd 100%);padding:72px 22px 112px;min-height:65vh;color:#607780}
+.archive-inner{max-width:960px;margin:auto}
+.archive-eyebrow{text-transform:uppercase;letter-spacing:.17em;font-size:.8rem;color:#ed722d;font-weight:700;margin-bottom:14px}
+.archive-page h1{color:#637e87;font-size:clamp(2.2rem,5vw,4.4rem);line-height:1.1;max-width:900px;font-weight:700;margin:0 0 30px}
+.archive-page h2{color:#637e87;font-size:clamp(1.3rem,3vw,1.8rem);margin-bottom:18px}
+.archive-page p{font-size:1.05rem;line-height:1.65;margin-bottom:16px}
+.archive-text-card{background:#fff;border:1px solid #e0e7e9;box-shadow:0 4px 24px rgba(35,68,80,.06);padding:32px;border-radius:8px;margin:24px 0}
+.archive-muted{font-size:.95rem!important;color:#677b83}
+.archive-back{color:#eb712e;font-weight:700;text-decoration:none}
+.archive-contact-note{max-width:760px;margin:22px auto;padding:20px;border:1px solid #dee5e7;border-radius:8px;color:#657c85;background:#fafcfc}
